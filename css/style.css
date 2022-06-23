@@ -1,0 +1,89 @@
+/*
+	General code for entire page.
+ */
+:root {
+	--background: #333940;
+	--primary: #e867ed;
+	--secondary: #ffffff;
+	font-family: sans-serif;
+}
+body {
+	background: var(--background);
+}
+h1, h2, h3 {
+	color: var(--primary);
+}
+textarea {
+	resize: none;
+}
+
+/* Header, footer */
+header, footer {
+	text-align: center;
+	padding: 0 15vw;
+	min-height: 125px;
+}
+header > p {
+	color: var(--secondary);
+}
+
+/* Main */
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section {
+	position: relative;
+	margin: 1.5em 0.8em;
+	padding: 1em;
+	border: 2px dashed var(--secondary);
+	flex: 1 0 25%;
+	display: grid;
+	grid-template-rows: min-content min-content auto;
+}
+section > h3 {
+	position: relative;
+	width: 97%;
+	font-size: 1.8em;
+	margin-top: -1.3em;
+	padding: 0.2em;
+	background: var(--background);
+	border: 2px solid var(--secondary);
+	border-radius: 6px;
+}
+section > p {
+	color: var(--primary);
+}
+div {
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	background-image: linear-gradient(
+		var(--background) 0%,
+		var(--primary) 100%
+	);
+}
+div:active {
+	user-select: all;
+}
+div > p {
+	font-family: monospace;
+	font-size: 1.2em;
+	color: var(--secondary);
+}
+
+/* Screen sizes */
+@media all and (max-width: 991px) {
+	header {
+		padding: 0 5vw;
+	}
+	section {
+		flex-basis: 35%;
+	}
+}
+@media all and (max-width: 767px) {
+	section {
+		flex-basis: 100%;
+	}
+}

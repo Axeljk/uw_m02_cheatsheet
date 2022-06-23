@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Cheatsheet</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+	<header>
+		<h1>CSS Snippet Cheatsheet</h1>
+		<p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+	</header>
+	<main>
+		<section>
+			<h3>Flexbox Row</h3>
+			<p>Use these three properties to create a Flexbox row layout.</p>
+			<div><p>.row {<br>&nbsp;&nbsp;display: flex;<br>&nbsp;&nbsp;flex-direction: row;<br>&nbsp;&nbsp;flex-wrap: wrap<br>}</p></div>
+		</section>
+		<section>
+			<h3>Flexbox Column</h3>
+			<p>Use this to create a Flexbox column layout.</p>
+			<div><p>.column {<br>&nbsp;&nbsp;display:flex;<br>&nbsp;&nbsp;flex-direction: column;<br>}</p></div>
+		</section>
+		<section>
+			<h3>CSS Grid Layout</h3>
+			<p>Build a 12-column layout using CSS Grid</p>
+			<div><p>.grid {<br>&nbsp;&nbsp;display: grid;<br>&nbsp;&nbsp;width: 100%;<br>&nbsp;&nbsp;grid-template-columns: repleat(12, 1fr);<br>}</p></div>
+		</section>
+		<section>
+			<h3>Linear Gradients</h3>
+			<p>This will create a background linear gradient from top to bottom.</p>
+			<div><p>.linear-gradient-background {<br>&nbsp;&nbsp;background-image: linear-gradient(<br>&nbsp;&nbsp;&nbsp;&nbsp;rgba(232, 102, 236, 0.3) 0%,<br>&nbsp;&nbsp;&nbsp;&nbsp;rgba(232, 102, 236, 0.6) 100%<br>&nbsp;&nbsp;);<br>}</p></div>
+		</section>
+		<section>
+			<h3>Box Transition Glow</h3>
+			<p>Use transitionand box shadows to glow on hover.</p>
+			<div><p>.code-card .card-header {<br>&nbsp;&nbsp;border-radius: 8px;<br>&nbsp;&nbsp;transition: all 0.5s ease-in-out;<br>}<br><br>.code-card:hover,<br>.code-card:hover .card-header {<br>&nbsp;&nbsp;box-shadow: insert 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);<br>}</p></div>
+		</section>
+		<section>
+			<h3>Overlay Card with Title</h3>
+			<p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+			<div><p>.card-header {<br>&nbsp;&nbsp;position: relative;<br>&nbsp;&nbsp;margin-top: -20px;<br>}</p></div>
+		</section>
+	</main>
+	<footer>
+		<h2>Made with &#10084;&#65039; and CSS</h2>
+	</footer>
+</body>
+</html>
